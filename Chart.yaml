@@ -1,5 +1,5 @@
 apiVersion: v2
-name: three-tier-app
+name: food-delivery
 description: Three Tier MERN Application
 type: application
 version: 0.1.0
