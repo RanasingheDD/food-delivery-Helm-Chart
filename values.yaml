@@ -2,10 +2,9 @@ frontend:
   replicaCount: 3
   image:
     repository: dishr/frontend
-    tag: 559a89dd2e938357fdab95c998e5142d79ddf47c
+    tag: 50f5bcfabb888c7c06f732ecf61b02d63040fcf0
   service:
     port: 80
-
 backend:
   replicaCount: 3
   image:
@@ -13,25 +12,19 @@ backend:
     tag: 559a89dd2e938357fdab95c998e5142d79ddf47c
   service:
     port: 4000
-
 mongodb:
   image:
     repository: mongo
     tag: "8"
-
   service:
     port: 27017
-
-  replicaCount: 1    
-
+  replicaCount: 1
   persistence:
     enabled: true
     storage: 5Gi
     storageClass: gp2
-
 ingress:
   enabled: true
   host: ""
-
 aws:
   region: us-east-1
