@@ -2,14 +2,14 @@ frontend:
   replicaCount: 3
   image:
     repository: dishr/frontend
-    tag: 50f5bcfabb888c7c06f732ecf61b02d63040fcf0
+    tag: v1
   service:
     port: 80
 backend:
   replicaCount: 3
   image:
     repository: dishr/backend
-    tag: 559a89dd2e938357fdab95c998e5142d79ddf47c
+    tag: v1
   service:
     port: 4000
 mongodb:
